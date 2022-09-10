@@ -1,0 +1,447 @@
+:root{
+    --primary:#f98715;
+    --light:#ffffff;
+    --dark:#000;
+    --gray: #2b2b2b;
+    --lightGray: #aeafaf;
+}
+::-webkit-scrollbar {
+    width: 5px;
+} /* this targets the default scrollbar (compulsory) */
+::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 7px rgba(0,0,0,0.8);*/
+    background-color: var(--primary);
+    /*border-radius: 8px;*/
+} /* the new scrollbar will have a flat appearance with the set background color */
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 100px var(--primary);
+    background-color: var(--primary); 
+    /*border-radius: 8px;*/
+} /* this will style the thumb, ignoring the track */
+
+::-webkit-scrollbar-button {
+    height: 0;
+    /* background-color: rgba(0,151,0,1);*/
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+::-webkit-scrollbar-corner {
+    background-color: var(--dark);
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+::-webkit-scrollbar-track-piece {
+    background-color: var(--light);	
+}
+::-webkit-scrollbar-button:horizontal {
+    width: 5px;
+/* Select the down or left scroll button when it's being hovered by the mouse */
+}
+.gutterTop {
+    margin-top: 10vh;
+}
+.darkBackground {
+    background-color: var(--dark);
+}
+.grayBackground {
+    background-color: var(--gray);
+}
+.themeBackground {
+    background-color: var(--primary);
+}
+.lightGrayText {
+    color: var(--lightGray);
+}
+.brand-logo img {
+    height: 8vh;
+    margin-left: 0.8vw;
+}
+nav {
+    background-color: var(--dark);
+    color: var(--dark);
+}
+nav ul a, .table-of-contents a {
+    color: var(--light);
+}
+.table-of-contents a.active, .table-of-contents a:hover {
+    border-left: unset;
+}
+.table-of-contents a.active {
+    font-weight: 700;
+}
+.table-of-contents a:hover {
+    /* font-weight: 400; */
+}
+.caroselContent {
+    position: absolute;
+    bottom: 40vh;
+    width: 100vw;
+}
+.shadow {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+}
+.section {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#home .carousel.carousel-slider {
+    top: -5px;
+}
+.caroselContent h1, .carousel.carousel-slider .carousel-item .caroselContent h2 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 110%;
+    margin: 0 auto;
+    width: 45%;
+}
+.carousel.carousel-slider .carousel-item .caroselContent p {
+    font-size: 21px;
+    font-weight: 500;
+}
+.firstCarousel, .secondCarousel, .thirdCarousel {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.firstCarousel {
+    background-image: url("../img/carouselOne.jpg");    
+}
+.secondCarousel {
+    background-image: url("../img/carouselTwo.jpg");
+}
+.thirdCarousel {
+    background-image: url("../img/carouselThree.jpg");
+}
+
+#aboutUs, .parallax-container {
+    top: -5px;
+    position: relative;
+}
+.container.aboutContainer {
+    width: 70%;
+    padding-bottom: 7vh;
+}
+.aboutRow {
+    padding: 12vh 0;
+}
+.aboutImg img {
+    border: 5px solid var(--primary);
+    width: 450px;
+    border-radius: 20px;
+}
+
+.aboutDetail {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutDetail p {
+    font-size: 1.0625rem;
+}
+.popularMealImg {
+    padding: 5px;
+}
+.popularMealImg {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.menuMealImg {
+    border-radius: 10px;
+    padding: 5px 5px 2vh 5px;
+}
+.popularMealImg h3, .menuMealImg h3 {
+    font-size: 20px;
+}
+.menuDetail {
+    padding: 0 1.5vw;
+}
+.catPriceRow {
+    display: flex;
+    justify-content: space-between;
+}
+.menuCartRow {
+    padding: 0 0.6vw;
+}
+.container {
+    width: 90%;
+}
+#menu, #gallery, #contact {
+    position: relative;
+    top: -5px;
+    padding: 8vh 0;
+}
+.parallax-container {
+    height: 90vh;
+    padding: 10vh 0;
+    background-color: rgba(0, 0, 0, 0.5);
+ }
+.parallax-container h5 {
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+.parallax-container h3 {
+    font-size: 6rem;
+    font-weight: 400;
+}
+.parallax-container h2 {
+    font-size: 8rem;
+    font-weight: 600;
+}
+.orderNowBtn {
+    background-color: var(--primary);
+    color: var(--dark);
+    height: 55px;
+    line-height: 55px;
+    padding: 0 32px;
+}
+.contactContainer {
+    padding-top: 10vh;
+}
+.contactBackground {
+    background-image: url('../img/contactBackground.jpg');
+    background-repeat: no-repeat;
+    height: 45vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+.contactShadow {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row .col.contactForm {
+    padding: 50px 50px;
+}
+.smRow {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+    /* margin-bottom: 8v */
+}
+.sm .smIconContainer {
+    height: 80px;
+    width: 80px;
+    background-color: var(--light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sm a .smIconContainer:hover {
+    background-color: var(--primary);
+    /* cursor: pointer; */
+}
+.sm .smIconContainer img {
+    height: 40px;
+}
+.addRows {
+    margin-bottom: 8vh;
+}
+.addressIcon {
+    background-color: var(--gray);
+    width: 100px;
+    height: 100px;
+    border-radius: 45% 55% 70% 35% / 45% 45% 55% 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    position: relative;
+    top: -5px;
+    padding: 2vh 0 0.3vh 0;
+    border-top: thin solid var(--gray);
+}
+
+@media only screen and (max-width: 900px) {
+    html, body {
+        width: 100%;
+    }
+    nav a {
+        color: #fcfbfb;
+    }
+    nav i {
+        font-size: 30px;
+    }
+
+
+    .brand-logo img {
+        height: 5vh;
+    }
+
+    .card .card-content {
+        min-height: 0;
+    }
+    .aboutUs .first {
+        padding-right: 0;
+    }
+    .aboutUs .second {
+        padding-left: 0;
+    }
+    .sidenav-overlay {
+        z-index: 991;
+    }
+    .aboutUsTitleContainDiv {
+        margin-top: 0;
+    }
+    .viMiDiv, .abtPageListDiv {
+        margin-top: 8vh;
+    }
+    .abtPageListDiv img {
+        width: 100%;
+    }
+}
+/* Small Screen */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 98%;
+    }    
+
+    .brand-logo img {
+        height: 6.5vh;
+    }
+
+    .caroselContent {
+        bottom: 50vh;
+    }
+    .container.aboutContainer {
+        width: 100%;
+        padding-bottom: 7vh;
+    }
+    .aboutImg img {
+        width: 250px;
+    }
+
+    .mobilePadding{
+        padding: 0 8vw !important;
+    }
+
+    .mobileGutterTop-10 {
+        padding-top: 10vh;
+    }
+
+    .mobileMarginBottom-10 {
+        margin-bottom: 10px;
+    }
+
+    .menuDetail {
+        padding: 0 5vw;
+    }
+
+    .btn-flat i, .btn-flat {
+        font-size: 0.8rem;
+    }
+    .parallax-container {
+        padding-top: 5vh;
+        height: 100vh;
+    }
+    .parallax-container h3 {
+        font-size: 4.5rem;
+    }
+
+    .parallax-container h2 {
+        font-size: 6rem;
+    }
+
+    .aboutDetail h2 {
+        margin-top: 0;
+    }
+
+    .carousel.carousel-slider .carousel-item {
+        height: 40%;
+    }
+    .shadow {
+        height: 47vh;
+        width: 100%;
+    }
+    #home .carousel.carousel-slider .carousel-item {
+        height: 100%;
+    }
+    #home .shadow {
+        height: 100vh;
+    }
+    .aboutUsHeading, .servicesHeading {
+        font-size: 3.5rem;
+    }
+    .contactContainer {
+        padding-top: 0;
+    }
+    .row.smRow {
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    .sm .smIconContainer {
+        height: 50px;
+        width: 50px;
+    }
+    .sm .smIconContainer img {
+        height: 25px;
+    }
+    .addressIcon {
+        width: 70px;
+        height: 70px;
+    }
+    .addRows h5 {
+        font-size: 1.2rem;
+    }
+    .addRows p {
+        font-size: 11px;
+    }
+    .addRows h5, .addRows p {
+        margin-top: 0;
+    }
+
+    .sidenav {
+        width: 75vw;
+    }
+
+    /* .aboutUsFirstColumn {
+        margin-top: 4vh;
+    }
+    #abtVideo {
+        height: auto;
+    }
+    .aboutUsTitleContainDiv {
+        margin-top: 0;
+    }
+    .viMiDiv, .abtPageListDiv {
+        margin-top: 8vh;
+    }
+
+    .abtPageListDiv img {
+        width: 100%;
+    } */
+
+    h2 {
+        font-size: 2.3rem;
+    }
+    h3 {
+        font-size: 1.92rem;
+    }
+
+    .carousel.carousel-slider .carousel-item .caroselContent h1, 
+    .carousel.carousel-slider .carousel-item .caroselContent h2 {
+        font-size: 40px;
+    }
+    .caroselContent h1, .carousel.carousel-slider .carousel-item .caroselContent h2 {
+        width: 80%;
+    }
+    .carousel.carousel-slider .carousel-item .caroselContent p {
+        font-size: 16px;
+    }
+    
+    .events .card .card-title {
+        font-size: 22px;
+    }
+    .sidenav-overlay {
+        z-index: 991;
+    }
+    
+}
+
+
